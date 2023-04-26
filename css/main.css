@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "regular";
+}
+
+.container {
+  max-width: 375px;
+  width: 100%;
+}
+
+.content {
+  width: 88%;
+  margin-inline: auto;
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "medium";
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.bg {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100dvh;
+  width: 100%;
+}
+.bg .top {
+  background-image: url("../images/pattern-bg.png");
+  height: 18.7em;
+  width: 100%;
+}
+.bg .bottom {
+  height: calc(100% - 18.7em);
+}
+
+.content {
+  margin-top: 1.8em;
+}
+.content h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+.content .searchBox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1.5em;
+}
+.content .searchBox input {
+  padding: 1.49em 3.75em;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.content .searchBox .arrow {
+  background: hsl(0, 0%, 17%);
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.content .display {
+  background: #fff;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+}
+.content .display .disp {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.content .display .disp h2 {
+  color: hsl(0, 0%, 59%);
+  margin-block: 0.5em;
+}
+.content .display .disp p {
+  color: hsl(0, 0%, 17%);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}/*# sourceMappingURL=main.css.map */

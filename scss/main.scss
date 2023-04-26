@@ -1,0 +1,82 @@
+@forward "./partials/";
+@use "./partials/colors" as *;
+.bg{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100dvh;
+    width: 100%;
+    .top{
+        background-image: url("../images/pattern-bg.png");
+        height: 18.7em;
+        width: 100%;
+
+    }
+    .bottom{
+        height: calc(100% - 18.7em);
+
+    }
+}
+.content{
+    margin-top: 1.8em;
+    h1{
+        text-align: center;
+        color: #fff;
+        font-size: 1.7em;
+        margin-bottom: 1em;
+
+    } 
+    .searchBox{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-radius: 15px;  
+        input{
+            padding: 1.49em 3.75em ;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+
+            ::placeholder{
+
+            }
+
+        }
+        .arrow{
+            background: $VeryDarkGray;
+            width: 100%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        margin-bottom: 1.5em;
+    } 
+    .display{
+        background: #fff;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 15px;
+        .disp{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1em;
+            h2{
+                color:$DarkGray;
+                margin-block:.5em;
+            }
+            p{
+                color: $VeryDarkGray;
+            }
+        }
+    }
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+}

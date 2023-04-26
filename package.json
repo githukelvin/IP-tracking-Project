@@ -1,0 +1,14 @@
+{
+  "name": "ip-address-tracker-master",
+  "version": "1.0.0",
+  "description": "IP tracking project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "githu kelvin",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
